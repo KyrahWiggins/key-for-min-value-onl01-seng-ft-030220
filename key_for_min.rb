@@ -36,27 +36,27 @@ key_for_min_value(ikea)
          {name: "Benvolio", age: "17", attitude: "worried"},
          {name: "Steven", age: "30", attitude: "confused"}
       ]
-   }, 
+   },
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
       :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => [
-          {name: "Mercutio", age: "18", attitude: "hot-headed"}, 
+          {name: "Mercutio", age: "18", attitude: "hot-headed"},
           {name: "Nurse", age: "44", attitude: "worried"}
       ]
    }
   }
-  
+
 epic_tragedy[:montague][:hero][:status] = "dead"
 epic_tragedy
-  
-  
+
+
 def monopoly
   monopoly = {}
   monopoly[:railroads] = {}
-end 
-  
+end
+
 monopoly
 
 
@@ -66,7 +66,7 @@ monopoly
 #  monopoly[:pieces] = 4,
 #  monopoly[:rent_in_dollars] = "one_piece_owned", "two_pieces_owned", "three_pieces_owned", "four_pieces_owned"
 #  monopoly[:names] = "reading_railroad", "pennsylvania_railroad", "b_and_o_railroad", "shortline"
-# end 
+# end
 
 
 # This one did not pass the learn.co test because of the following error message:
@@ -80,7 +80,7 @@ monopoly
 #   monopoly = {
 #     railroads: {
 #       pieces: 4,
-#       rent_in_dollars: {}, 
+#       rent_in_dollars: {},
 #       names: {}
 #     }
 #   }
@@ -110,12 +110,12 @@ monopoly_with_second_tier
 #  monopoly = {
 #    railroads: {
 #      pieces: 4,                               <===apparently you can enter an integer like this...
-#      rent_in_dollars: { 
+#      rent_in_dollars: {
 #        :one_piece_owned => 25,                  <=== ...or like this
 #        :two_pieces_owned => 50,                 <=== ,this
 #        :three_pieces_owned => 100,              <=== ,this
-#        :four_pieces_owned => 200                <=== ,and this   
-#      }, 
+#        :four_pieces_owned => 200                <=== ,and this
+#      },
 #      names: {
 #        reading_railroad: "mortgage_value",      <===here's the problem
 #        pennsylvania_railroad: "mortgage_value", <===same here
@@ -123,22 +123,22 @@ monopoly_with_second_tier
 #      }
 #    }
 #  }
-#end 
+#end
 
 def monopoly_with_third_tier
   monopoly = {
     railroads: {
       pieces: 4,
       rent_in_dollars: {
-        one_piece_owned:      25, 
-# alt  :one_piece_owned =>    25,  <===this will give you the same result         
+        one_piece_owned:      25,
+# alt  :one_piece_owned =>    25,  <===this will give you the same result
         two_pieces_owned:     50,
-# alt  :two_pieces_owned =>   25,  <===this will give you the same result 
-        three_pieces_owned:   100, 
-# alt  :three_pieces_owned => 100, <===this will give you the same result 
+# alt  :two_pieces_owned =>   25,  <===this will give you the same result
+        three_pieces_owned:   100,
+# alt  :three_pieces_owned => 100, <===this will give you the same result
         four_pieces_owned:    200
-# alt  :four_pieces_owned =>  200  <===this will give you the same result 
-      }, 
+# alt  :four_pieces_owned =>  200  <===this will give you the same result
+      },
       names: {
         reading_railroad: {},
         pennsylvania_railroad: {},
@@ -147,7 +147,7 @@ def monopoly_with_third_tier
       }
     }
   }
-end 
+end
 
 monopoly_with_third_tier
 
@@ -157,17 +157,17 @@ def monopoly_with_fourth_tier
     railroads: {
       pieces: 4,
       rent_in_dollars: {
-        one_piece_owned:      25, 
-# alt  :one_piece_owned =>    25,  <===this will give you the same result         
+        one_piece_owned:      25,
+# alt  :one_piece_owned =>    25,  <===this will give you the same result
         two_pieces_owned:     50,
-# alt  :two_pieces_owned =>   25,  <===this will give you the same result 
-        three_pieces_owned:   100, 
-# alt  :three_pieces_owned => 100, <===this will give you the same result 
+# alt  :two_pieces_owned =>   25,  <===this will give you the same result
+        three_pieces_owned:   100,
+# alt  :three_pieces_owned => 100, <===this will give you the same result
         four_pieces_owned:    200
-# alt  :four_pieces_owned =>  200  <===this will give you the same result 
-      }, 
+# alt  :four_pieces_owned =>  200  <===this will give you the same result
+      },
       names: {
-        reading_railroad: { 
+        reading_railroad: {
           "mortgage_value" => "$100",
         },
         pennsylvania_railroad: {
@@ -185,6 +185,3 @@ def monopoly_with_fourth_tier
 end
 
 monopoly_with_fourth_tier
-
-
-
